@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root{
+    --purple-color: #784095;
+    --bg-color: #ecdaa3;
+}
+/* basic css reset */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+*{ margin: 0; }
+img{
+    display:block;
+    max-width: 100%;
+}
+/* basic css reset */
+
+body {
+    background-color: var(--bg-color);
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--purple-color);
+    font-family: "Funnel Display";
+    padding: 1px;
+}
+
+.players{
+    text-align: center;
+    padding: 10px;
+    font-family: "Funnel Display";
+}
+
+input {
+    font-size: 1.5rem;
+    font-family: "Funnel Display";
+    border-radius: 30px;
+    padding: 3px;
+    border-style: solid;
+}
+
+button {
+    font-size: 1.5rem;
+    font-family: "Funnel Display";
+    /* color: var(--purple-color); */
+    /* background-color: white; */
+    border-color: var(--purple-color);
+    border-radius: 30px;
+    border-style: solid;
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "n1 n2 n3 n4 n5 n6 n7 n8 n9";
+    font-family: "Funnel Display";
+    justify-content: space-evenly;
+    min-height: 200px;
+    gap: 2px;
+    margin: 5px;
+}
+#box1 {
+    grid-area: n1;
+}
+#box2 {
+    grid-area: n2;
+}
+#box3 {
+    grid-area: n3;
+}
+#box4 {
+    grid-area: n4;
+}
+#box5 {
+    grid-area: n5;
+}
+#box6 {
+    grid-area: n6;
+}
+#box7 {
+    grid-area: n7;
+}
+#box8 {
+    grid-area: n8;
+}
+#box9 {
+    grid-area: n9;
+}
+.dice {
+    font-size: 150px;
+    text-align: center;
+    color: var(--purple-color);
+    margin: 3px;
+}
+
+.gi {
+    color: var(--purple-color);
+    font-family: "Funnel Display";
+    min-height: 200px;
+    text-align: center;
+    align-self: center;
+    font-size: 8rem;
+    border: 2px solid var(--purple-color);
+    border-radius: 5px;
+    padding: 10px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.gameBtns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.game, .scorecard, .winner {
+    display: none;
+}
+
+.scorecard {
+    margin-top: 10px;
+}
+
+table, th, td {
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid var(--purple-color);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#p1name, #p2name, td, th {
+    color: var(--purple-color);
+}
+
+.shut {
+    background-color: tomato;
+    color: black;
+    border-color: var(--purple-color);
+    color: var(--purple-color);
+    border-width: 10px;
+}
+
+/* table {
+    align: center;
+} */
+
+.winner {
+    text-align: center;
+}
